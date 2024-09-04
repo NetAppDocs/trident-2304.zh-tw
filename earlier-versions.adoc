@@ -20,5 +20,4 @@ summary: 如果您未執行最新版本、則可取得舊版Astra Trident的文�
 * https://docs.netapp.com/us-en/trident-2204/index.html["Astra Trident 22.04"^]
 * https://docs.netapp.com/us-en/trident-2201/index.html["Astra Trident 22.01"^]
 * https://docs.netapp.com/us-en/trident-2110/index.html["Astra Trident 21.10"^]
-* https://docs.netapp.com/us-en/trident-2107/index.html["Astra Trident 21.07"^]
 
