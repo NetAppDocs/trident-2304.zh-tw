@@ -2726,9 +2726,6 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="f72ba1a3a498489a96fd8774bfa9ea9d" category="example-title">支援升級功能的不一樣之處&lt;/strong&gt; &lt;strong&gt;</block>
   <block id="f456a413d0506028374e871768a5f176" category="paragraph">當叢集的Kubernetes版本升級至支援的版本時、營運者會自動更新現有的Astra Trident安裝、並加以變更、以確保其符合Kubernetes版本的要求。</block>
   <block id="d1aae6ea63eb5e7fe6a9fcea5f671406" category="admonition">如果叢集升級至不受支援的版本、則操作員將無法安裝Astra Trident。如果操作員已安裝Astra Trident、則會顯示警告、指出Astra Trident安裝在不受支援的Kubernetes版本上。</block>
-  <block id="c3b2fe84f143129d7a18ad12df229bc6" category="example-title">使用BlueXP（前身為Cloud Manager）進行叢集管理&lt;/strong&gt; &lt;strong&gt;</block>
-  <block id="fd1117c82327fbe8671f26e897ceb8f4" category="inline-link-macro">使用BlueXP的Astra Trident</block>
-  <block id="a76a1e164520105317267dc41b95e8ce" category="paragraph">與 <block ref="f8c16e8c21124ccc028d2db7fd32a98f" category="inline-link-macro-rx"></block>、您可以升級至最新版的Astra Trident、新增及管理儲存類別、並將其連線至工作環境、以及使用Cloud Backup Service NetApp備份持續的Volume。BlueXP支援使用Trident操作者手動或使用Helm進行Astra Trident部署。</block>
   <block id="43e6c0a141c1737a96917c56c7e22a73" category="inline-link-macro">安裝&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt; 功能</block>
   <block id="1a2de31d648d8c09e5c2a9257a5ad67b" category="paragraph">如果您現有的部署必須升級、或是想要高度自訂部署、您應該考慮 <block ref="e214bf159dbaf6573cfe15f1373b92db" category="inline-link-macro-rx"></block>。這是部署Astra Trident的傳統方法。</block>
   <block id="4c24a3b9facf2ea9fc7ed2ca52dab45d" category="inline-link-macro">客製化安裝功能&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt;</block>
@@ -3044,10 +3041,6 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
   <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
   <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
-  <block id="cce172403b73af5c2a4e93081affcc7f" category="inline-link">Astra Trident 21.10</block>
-  <block id="606b9e83fb467a43b3065d4fd5037094" category="list-text"><block ref="606b9e83fb467a43b3065d4fd5037094" category="inline-link-rx"></block></block>
-  <block id="a93e9e44b7a375a4236260f5ff2b251e" category="inline-link">Astra Trident 21.07</block>
-  <block id="3830d427e146a8a64454dc373d9b1502" category="list-text"><block ref="3830d427e146a8a64454dc373d9b1502" category="inline-link-rx"></block></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
@@ -3955,4 +3948,6 @@ Astra Trident</block>
   <block id="b6780b7b2561935ff862fe7126cde751" category="list-text"><block ref="b6780b7b2561935ff862fe7126cde751" category="inline-link-rx"></block></block>
   <block id="b9a641d903e611a87a5e68ac7fdb0b84" category="list-text">Trident AutoSupport 無法收集或傳輸個人識別資訊（PII）或個人資訊。隨附<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> 不適用於 Trident 容器映像本身的。您可以深入瞭解 NetApp 對資料安全與信任的承諾<block ref="d3cc55401bc8303e01c6b0c43ba0733f" category="inline-link-rx"></block>。</block>
   <block id="5ff83dbc70e496ea22b38ea61bb69f05" category="list-text">觀看上的示範 <block ref="c27441bbbe62adf51ae6ecec41fde8bd" category="inline-link-macro-rx"></block>。</block>
+  <block id="15eaa3bd461b989a50d54376e8b82942" category="example-title">&lt;strong&gt;使用NetApp Console管理 Kubernetes 叢集&lt;/strong&gt;</block>
+  <block id="28cfb8f261719a05032a41acccc32995" category="paragraph">透過使用NetApp Console 的Astra Trident ，您可以升級至最新版本的Astra Trident，新增和管理儲存類別並將其連接到工作環境，以及使用Cloud Backup Service備份持久性磁碟區。控制台支援使用Trident操作員手動或使用 Helm 部署Astra Trident 。</block>
 </blocks>
