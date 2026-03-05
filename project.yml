@@ -11,8 +11,10 @@ settings:
   versions:
   - version-number: '23.04'
     url: "/trident-2304"
-  - version-number: '25.10'
+  - version-number: '26.02'
     url: "/trident"
+  - version-number: '25.10'
+    url: "/trident-2510"
   - version-number: '25.06'
     url: "/trident-2506"
   - version-number: '25.02'
