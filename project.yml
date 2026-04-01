@@ -40,8 +40,6 @@ sidebar:
     entries:
     - title: 新增功能
       url: "/trident-rn.html"
-    - title: 舊版
-      url: "/earlier-versions.html"
   - section: trident-concepts
   - section: trident-get-started
   - section: trident-managing-k8s

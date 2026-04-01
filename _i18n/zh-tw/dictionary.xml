@@ -2468,8 +2468,6 @@ Volume：</block>
   <block id="d3889fc650fa47326b5f1d0c56f50970" category="inline-link-macro">Pod安全標準</block>
   <block id="4e8effbd512bb14dbe10454c0f045ff2" category="paragraph">全新 <block ref="305368b4f0d008a807e095ab9da58448" category="inline-link-macro-rx"></block> （PSS）部分已新增、詳述由Astra Trident在安裝時啟用的權限。</block>
   <block id="278dc4a29aa2b881b9dc4b45a82929c5" category="section-title">22.04年的變化</block>
-  <block id="ba09ee47d11962c1ccd13d7e1f10e6c5" category="inline-link">較早版本的文件</block>
-  <block id="368b120a3b5f53a49dc3ab96ec9b8dbd" category="paragraph">NetApp持續改善及強化其產品與服務。以下是Astra Trident的一些最新功能。如需舊版的資訊、請參閱<block ref="25da125dffad1d6323c21354bccf0203" category="inline-link-rx"></block>。</block>
   <block id="7072ec708b0ea7e3243747d8b79c0d20" category="admonition">如果您要從任何先前的Trident版本升級並使用Azure NetApp Files 更新版本、請使用 <block ref="d5189de027922f81005951e6efe0efd5" prefix="" category="inline-code"></block> 組態參數現在是必填的單一欄位。</block>
   <block id="cb60f101c87f3def78d0fef168389244" category="inline-link-macro">GitHub 問題 #681.</block>
   <block id="2901fba3b85d37ea6000d90e72366ba6" category="list-text">改善iSCSI啟動器名稱的剖析。（<block ref="3947f141b94c1867221790f45a6ee173" category="inline-link-macro-rx"></block>）</block>
@@ -3018,20 +3016,6 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="642bfa81920103d4177bb3fdf6f9186f" category="list-text"><block ref="642bfa81920103d4177bb3fdf6f9186f" category="inline-link-macro-rx"></block></block>
   <block id="93e8ba41e1ebcadc1338cc7f75109210" category="inline-link-macro">建立其他儲存類別。</block>
   <block id="daa40449d28fbb16d2bcd8a8434d05e6" category="list-text"><block ref="daa40449d28fbb16d2bcd8a8434d05e6" category="inline-link-macro-rx"></block></block>
-  <block id="34c4dac14496e9c45d92f345d9392fc8" category="summary">如果您未執行最新版本、則可取得舊版Astra Trident的文件。</block>
-  <block id="93168a8084b3e838d2932c4734bd234e" category="section-title">舊版</block>
-  <block id="78038c97749fe61b1148a68a71c14a02" category="inline-link-macro">Astra Trident 版本與支援生命週期</block>
-  <block id="3a1fdf1059d780b17a5dd3ecba99371d" category="paragraph">如果您未執行 Astra Trident 23.04 、則會根據提供先前版本的文件 <block ref="ec2082dc40596525d1bb212183949428" category="inline-link-macro-rx"></block>。</block>
-  <block id="4693b2393d80830cd4f198db20bf2b72" category="inline-link">Astra Trident 23.01</block>
-  <block id="cd494508ccf1cdc45163d6d9d0f401ff" category="list-text"><block ref="cd494508ccf1cdc45163d6d9d0f401ff" category="inline-link-rx"></block></block>
-  <block id="3fe5d266a33f137293c314a2e334b611" category="inline-link">Astra Trident 22.10</block>
-  <block id="9fefe9ff51badc61edd8a36c8240aa29" category="list-text"><block ref="9fefe9ff51badc61edd8a36c8240aa29" category="inline-link-rx"></block></block>
-  <block id="21d437ff7c8ceb5481603b5d2c05442a" category="inline-link">Astra Trident 22.07</block>
-  <block id="8a7908446b584a99ce1055c602a9c74e" category="list-text"><block ref="8a7908446b584a99ce1055c602a9c74e" category="inline-link-rx"></block></block>
-  <block id="c53358822905bb04d312060d1cb568af" category="inline-link">Astra Trident 22.04</block>
-  <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
-  <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
-  <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
@@ -3967,4 +3951,5 @@ Astra Trident</block>
   <block id="cd8b45d6d96bb528f04c3ce2788b337d" category="paragraph">以下範例從後端<block ref="ac181edf7a7be1f8ae6a6b0ac4a71686" prefix=" " category="inline-code"></block>匯入一個名為<block ref="47068649001b68b4aba2f4219a2f981b" prefix=" " category="inline-code"></block>的 1GiB<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> 磁碟區，並使用 PVC 註解設定了 RWO 存取模式：</block>
   <block id="6aa655b386a1e31c420fd6553ed2b4fc" category="paragraph">以下範例從後端<block ref="4bafc897a4f30b09156a60d3350c8819" prefix=" " category="inline-code"></block>匯入名為<block ref="a8aa3f9da25a5d21fdd26c0a26592e1e" prefix=" " category="inline-code"></block>的 1Gi<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> 磁碟區，並使用 PVC 註解設定 RWO 存取模式：</block>
   <block id="3a175f8153aad5b64492df6eadb5a5af" category="paragraph">以下範例展示如何匯入託管和非託管磁碟區：</block>
+  <block id="15bd21e4cb669eaf47cfec94c1119ed7" category="paragraph">NetApp 不斷改進和增強其產品和服務。以下是 Astra Trident 的一些最新功能。有關先前版本的資訊，請參閱早期版本的文件。</block>
 </blocks>
