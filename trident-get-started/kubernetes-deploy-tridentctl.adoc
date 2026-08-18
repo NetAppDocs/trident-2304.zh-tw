@@ -16,6 +16,7 @@ summary: '您可以使用安裝Astra Trident `tridentctl`。此程序適用於�
 
 
 
+[[critical-information-about-astra-trident-23-04]]
 == Astra Trident 23.04 的重要資訊
 
 *您必須閱讀下列有關Astra Trident的重要資訊。*
@@ -33,6 +34,7 @@ summary: '您可以使用安裝Astra Trident `tridentctl`。此程序適用於�
 ====
 
 
+[[install-astra-trident-using-tridentctl]]
 == 使用安裝Astra Trident `tridentctl`
 
 檢閱 link:../trident-get-started/kubernetes-deploy.html["安裝總覽"] 為了確保您符合安裝先決條件、並為您的環境選擇正確的安裝選項。
@@ -69,6 +71,7 @@ kubectl run -i --tty ping --image=busybox --restart=Never --rm -- \
 ====
 
 
+[[step-1-download-the-trident-installer-package]]
 == 步驟1：下載Trident安裝程式套件
 
 Astra Trident安裝程式套件會建立Trident pod、設定用來維持其狀態的CRD物件、並初始化csi sidecar以執行資源配置和將磁碟區附加至叢集主機等動作。從下載並擷取Trident安裝程式的最新版本 link:https://github.com/NetApp/trident/releases/latest["GitHub的_Assets區段"^]。請使用<trident-installer-XX.XX.X.tar.gz> 您所選的Astra Trident版本來更新範例中的_SUR__。
@@ -81,6 +84,7 @@ cd trident-installer
 ----
 
 
+[[step-2-install-astra-trident]]
 == 步驟 2 ：安裝 Astra Trident
 
 執行、在所需的命名空間中安裝Astra Trident `tridentctl install` 命令。您可以新增其他引數來指定映像登錄位置。
@@ -134,12 +138,14 @@ INFO Trident installation succeeded.
 ----
 
 
+[[verify-the-installation]]
 == 驗證安裝
 
 您可以使用Pod建立狀態或來驗證安裝 `tridentctl`。
 
 
 
+[[using-pod-creation-status]]
 === 使用Pod建立狀態
 
 您可以檢閱建立的Pod狀態、確認是否已完成Astra Trident安裝：
@@ -157,6 +163,7 @@ NOTE: 如果安裝程式未成功完成或 `trident-controller-<generated id>` (
 
 
 
+[[using-tridentctl]]
 === 使用 `tridentctl`
 
 您可以使用 `tridentctl` 檢查安裝的Astra Trident版本。
@@ -173,6 +180,7 @@ NOTE: 如果安裝程式未成功完成或 `trident-controller-<generated id>` (
 ----
 
 
+[[sample-configurations]]
 == 組態範例
 
 .範例 1 ：啟用 Astra Trident 在 Windows 節點上執行
@@ -188,7 +196,7 @@ tridentctl install --windows -n trident
 .範例 2 ：啟用強制分離
 [%collapsible%open]
 ====
-如需強制分離的詳細資訊、請參閱 link:..trident-get-started/kubernetes-customize-deploy.html["自訂Trident操作員安裝"]。
+如需強制分離的詳細資訊，請參閱link:kubernetes-customize-deploy.html["自訂Trident操作員安裝"]。
 
 [listing]
 ----
@@ -197,6 +205,7 @@ tridentctl install --enable-force-detach=true -n trident
 ====
 
 
+[[whats-next]]
 == 下一步
 
 現在您可以了 link:kubernetes-postdeployment.html["建立後端和儲存類別、配置磁碟區、並將磁碟區掛載到Pod中"]。

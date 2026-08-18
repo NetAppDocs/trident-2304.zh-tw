@@ -382,7 +382,6 @@
   <block id="6a3ad0d68dcfe0164611dadb7f7656f9" category="paragraph">Astra Trident不再需要<block ref="a226e9fbdfc1c8dd7e7fef4d333f86ed" prefix=" " category="inline-code"></block>。它使用客戶需求日來維持狀態。</block>
   <block id="bde6cb03741f92107c63aeebe62d3278" category="section-title">Astra Trident是否支援從私有登錄進行離線安裝？</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">請按這裡</block>
-  <block id="45b09f7cb3dcbe0274eef2b3fce46bea" category="paragraph">可以、Astra Trident可以離線安裝。請參閱 <block ref="4a2b27d6d4bc3dd7ae85bfd131d50753" category="inline-link-macro-rx"></block>。</block>
   <block id="1c51806b370d428d5779dbcacd940174" category="section-title">我可以從遠端安裝Astra Trident嗎？</block>
   <block id="bf858450c271da75a3df3a15ca761330" category="paragraph">是的。Astra Trident 18.10及更新版本可從任何擁有的機器支援遠端安裝功能<block ref="0f12ee5c9f1dd90158580f1c292b0d37" prefix=" " category="inline-code"></block> 存取叢集。之後<block ref="0f12ee5c9f1dd90158580f1c292b0d37" prefix=" " category="inline-code"></block> 存取已驗證（例如：啟動<block ref="1513e62b9eb7bbfc46c1be1a91a2ab76" prefix=" " category="inline-code"></block> 遠端機器的命令進行驗證）、請遵循安裝指示。</block>
   <block id="12694c2de4575e39a6f7e81d55e35de9" category="section-title">我可以使用Astra Trident設定高可用度嗎？</block>
@@ -390,9 +389,7 @@
   <block id="1656e4b34abdb6d497b40cac65366767" category="section-title">Astra Trident是否需要存取Kube系統命名空間？</block>
   <block id="6f67e1edfd4aa5b0e695528a9c7d8898" category="paragraph">Astra Trident從Kubernetes API伺服器讀取、以判斷應用程式何時要求新的PVCS、因此需要存取Kube-system。</block>
   <block id="16cdb35003b5bcf0f30556e0bc477511" category="section-title">Astra Trident使用哪些角色和權限？</block>
-  <block id="6efc6545e459b8bb96815706b41a84cd" category="paragraph">Trident安裝程式會建立Kubernetes ClusterRole、該叢集具有特定存取權、可存取叢集的PersistentVolume、PersistentVolume Claim、StorageClass及Kubernetes叢集的Secret資源。請參閱 <block ref="7a68296d6f600eac17d317743bea0050" category="inline-link-macro-rx"></block>。</block>
   <block id="8ff39a39871cc30228035bc0580a6af4" category="section-title">我可以在本機產生安裝所用的確切資訊清單檔案嗎？</block>
-  <block id="0f43ba8a9cfc14b033c2c652f53bfcb9" category="paragraph">如有需要、您可以在本機產生及修改安裝所使用的確切資訊清單檔案Astra Trident。請參閱 <block ref="7a68296d6f600eac17d317743bea0050" category="inline-link-macro-rx"></block>。</block>
   <block id="e6af67b71bd46d7588b50f28e1414f9b" category="section-title">我是否可以針對ONTAP 兩個獨立Kubernetes叢集的兩個Astra Trident執行個體、共用相同的支援功能後端SVM？</block>
   <block id="7bbf9b47e035f0f9bb7c46098e78fb4d" category="paragraph">雖然不建議使用、但您可以針對兩個Astra Trident執行個體使用相同的後端SVM。在安裝期間為每個執行個體指定唯一的Volume名稱、及（或）指定唯一的Volume名稱<block ref="641b2675465e765661450709e2351a8e" prefix=" " category="inline-code"></block> 中的參數<block ref="57a3822fdb39e72cdc47d89fd04ce467" prefix=" " category="inline-code"></block> 檔案：這是為了確保FlexVol 兩個執行個體都不會使用相同的功能。</block>
   <block id="9840a5bb6278469ed550bcdcc92c29c5" category="section-title">是否能在ContainerLinux（前身為CoreOS）下安裝Astra Trident？</block>
@@ -429,7 +426,6 @@
   <block id="ce44cbbc54839f39b351c091b0e3caa5" category="paragraph">NetApp支援將Astra Trident從一個重大版本升級至下一個重大版本。您可以從11.xx版升級至19.xx、19.xx版升級至20.xx版、依此類推。在正式作業部署之前、您應該先在實驗室中測試升級。</block>
   <block id="0399b9e6348e554937a4d65efc97a1b8" category="section-title">是否能將Trident降級至先前的版本？</block>
   <block id="d307563c01953bd90a41ddd049f96d51" category="inline-link-macro">降級一節</block>
-  <block id="72fec731c958562fd09df08eef5fbb89" category="paragraph">如果您想要降級、有許多因素需要評估。請參閱 <block ref="ea621a0de3f004c488ea799d0fd7e41d" category="inline-link-macro-rx"></block>。</block>
   <block id="ba9c59aa9d07b25e124dcf6ca88d689a" category="section-title">管理後端和磁碟區</block>
   <block id="ffe72215dff9a93d62ee68905212025e" category="section-title">我是否需要在ONTAP 一個後端定義檔案中定義管理和資料生命期？</block>
   <block id="7911fdf4657d2e334f854a18bd855d10" category="paragraph">管理LIF為必填項目。資料LIF會有所不同：</block>
@@ -787,9 +783,6 @@ ONTAP 後端的 Amazon FSX 需要此參數。</block>
 如需詳細資訊、請參閱： <block ref="00deada136b55f176f599153703cf50d" category="inline-link-macro-rx"></block>。</block>
   <block id="b8ae61dc50cf8e8b79e68bc4a8d36393" category="cell"><block ref="0f179ba2bc32ab5d8f60692f5b800c86" prefix="" category="inline-code"></block></block>
   <block id="a56dcba8eacdac67fb510e1434d560d8" category="inline-link-macro">使用Linux統一金鑰設定（LUKS）</block>
-  <block id="8336fb38c3b943161d5d6e73af8f4a12" category="cell">啟用LUKS加密。請參閱 <block ref="3646c7a69a11bdd94c010bf856bda313" category="inline-link-macro-rx"></block>。
-
-僅限 SAN 。</block>
   <block id="58c09f2c9581bc7c58c32116266b6d8f" category="cell">要使用的分層原則<block ref="334c4a4c42fdb79d7ebc3e73b517e6f8" prefix=" " category="inline-code"></block></block>
   <block id="49ed5b3ecd0e966bec6b74083f06599e" category="cell"><block ref="8805d416ce540c5f2df34af5b18d742b" prefix="" category="inline-code"></block> 適用於 ONTAP 9.5 之前的 SVM-DR 組態</block>
   <block id="8ba802b52dc84f4e82bfbbf2e2d4a807" category="cell">新磁碟區的模式。
@@ -1011,8 +1004,6 @@ Amazon FSX 需要此參數才能支援 ONTAP 後端、且不可為空白。</blo
   <block id="3908892c437778f8b161a2ca006782cd" category="list-text">在從屬磁碟區上無法執行快照、複製和鏡射。</block>
   <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">以取得更多資訊</block>
   <block id="8ff961668c6784e84b25c265cbb629d7" category="paragraph">若要深入瞭解跨命名空間Volume存取：</block>
-  <block id="f1cfea5f1444de607dfa549b3aa57010" category="inline-link-macro">在命名空間之間共用磁碟區：歡迎使用跨命名空間磁碟區存取</block>
-  <block id="2780f690b7670efc296ac19ef3029d0c" category="list-text">請造訪 <block ref="b0d29f1b2abb2cc552e4cc47177582ef" category="inline-link-macro-rx"></block>。</block>
   <block id="96e1384807331548bf745acde0fe1b73" category="inline-link-macro">NetAppTV</block>
   <block id="481e993a13f6d4f981acc2da60465e2a" category="summary">深入瞭解ANF的NFS和SMB後端組態選項、並檢閱組態範例。</block>
   <block id="17a48ec106d5505e674ccdf56fce1058" category="doc">列舉後端組態選項與範例Azure NetApp Files</block>
@@ -1209,18 +1200,14 @@ SMB磁碟區已忽略。</block>
   <block id="c891939fd67dfe2cdc8d8bd5a1404644" category="paragraph">瞭Cloud Volumes Service 解如何使用提供的範例組態、將NetApp for Google Cloud設定為Astra Trident安裝的後端。</block>
   <block id="ac7ba403929463ebd2aabb621c443399" category="section-title">深入瞭解Astra Trident對Cloud Volumes Service Google Cloud的支援</block>
   <block id="1d326a2a7f267c800fe3eafb89e5c7cd" category="inline-link-macro">服務類型</block>
-  <block id="f391d05be666574cba6a6b88827e5766" category="paragraph">Astra Trident可在Cloud Volumes Service 兩個地方建立一個不二的資料區 <block ref="a3cd55e5a9ff014b76f6953040234c24" category="inline-link-macro-rx"></block>：</block>
   <block id="3671a5060127094ad405aad9295e6609" category="inline-link-macro">三個服務層級</block>
-  <block id="9b44bc41471d2c2cc25eb7a9e5e01b49" category="list-text">* CVS效能*：預設的Astra Trident服務類型。這種效能最佳化的服務類型最適合重視效能的正式作業工作負載。CVS效能服務類型是一種硬體選項、可支援最小100 GiB大小的磁碟區。您可以選擇其中一項 <block ref="87d12cea36129673eb9128fd986958c5" category="inline-link-macro-rx"></block>：</block>
   <block id="1b3b34a1280074ca8311ff50bbacac6c" category="list-text"><block ref="c00f0c4675b91fb8b918e4079a0b1bac" prefix="" category="inline-code"></block></block>
   <block id="3f27980baf5bae9c9c40df09c54f6f23" category="list-text"><block ref="a288195832f8717bca4671416014a464" prefix="" category="inline-code"></block></block>
   <block id="091d891c1f040cef1072e2593b7f1f3b" category="list-text"><block ref="287e9593819b2fcdf9945e7ccacd637d" prefix="" category="inline-code"></block></block>
   <block id="1048ee58172376b84dda9c7505d858ea" category="inline-link-macro">兩種服務層級</block>
-  <block id="6c62a8c68facf167a61fbd54e9cceb5f" category="list-text">* CVS：CVS服務類型提供高分區可用度、但效能等級僅限於中度。CVS服務類型是一種軟體選項、使用儲存資源池來支援小至1 GiB的磁碟區。儲存資源池最多可包含50個磁碟區、其中所有磁碟區都會共用資源池的容量和效能。您可以選擇其中一項 <block ref="21d52e1e64b94d45bea308be30f5a76a" category="inline-link-macro-rx"></block>：</block>
   <block id="277d5dd64fbcc2dbcd79252b41d6113e" category="list-text"><block ref="317ec56a799e879712bbd2d0fcbd3b93" prefix="" category="inline-code"></block></block>
   <block id="4bfd77bf3278584b71bc8c9deef39ca9" category="list-text"><block ref="75b65576cc4a19f0836b73610ad5957a" prefix="" category="inline-code"></block></block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link">適用於 Google Cloud Cloud Volumes Service</block>
-  <block id="da195e41c537042ae77405110c4512ff" category="paragraph">以設定及使用<block ref="5129d3f1116e9c5221bfcf965a1ede35" category="inline-link-rx"></block> 後端、您需要下列項目：</block>
   <block id="66d7ad821e261a4b5099f37ced19ebb1" category="list-text">Google Cloud帳戶已設定NetApp Cloud Volumes Service 功能</block>
   <block id="2c00ff9c7700dc3529c57f0a5281bbe2" category="list-text">Google Cloud帳戶的專案編號</block>
   <block id="43752d169c5729fffa3a6557a0978cb8" category="list-text">Google Cloud服務帳戶<block ref="4a5395c87dd91b3242056f83b7cedb9b" prefix=" " category="inline-code"></block> 角色</block>
@@ -1936,7 +1923,6 @@ Amazon FSX 需要此參數才能支援 ONTAP 後端、且不可為空白。</blo
   <block id="51fd2fc669e51c6870f1148623240f69" category="paragraph">NetApp的多重傳輸協定、統一化儲存作業系統可為任何應用程式提供進階資料管理功能。ONTAP支援所有Flash、混合式或全硬碟組態的系統、可提供多種不同的部署模式、包括工程設計硬體（英文版）、白箱（英文版）和僅雲端（英文版）ONTAP FAS AFF ONTAP Select Cloud Volumes ONTAP 。</block>
   <block id="cbb7697b4f6f189240d043ff70ca133c" category="admonition">Trident支援上述ONTAP 所有的功能齊全的部署模式。</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="section-title">Cloud Volumes ONTAP</block>
-  <block id="5c04ffbd0c110bf7b37d6b95eb756b75" category="paragraph"><block ref="700b45b9fca207b66f675c8d5dfb073b" category="inline-link-rx"></block> 是一款純軟體的儲存應用裝置、可在ONTAP 雲端上執行功能完善的資料管理軟體。您可以使用Cloud Volumes ONTAP 支援功能來執行正式作業工作負載、災難恢復、DevOps、檔案共享和資料庫管理。它提供儲存效率、高可用度、資料複寫、資料分層和應用程式一致性、將企業儲存設備延伸至雲端。</block>
   <block id="04452ff4732608f62e53d20e4b8f4c92" category="paragraph"><block ref="6a2736fcbb5755dd03d114a5153506eb" category="inline-link-rx"></block> 是一項完整管理的AWS服務、可讓客戶啟動及執行採用NetApp ONTAP 的一套資訊儲存作業系統的檔案系統。FSX for ONTAP VMware可讓客戶運用熟悉的NetApp功能、效能和管理功能、同時充分發揮儲存AWS資料的簡易性、敏捷度、安全性和擴充性。FSX ONTAP for FSfor支援ONTAP的許多檔案系統功能和管理API。</block>
   <block id="27bb76bfb1e4f9966c31f5042348cd1e" category="section-title">Element軟體</block>
   <block id="1fdf61a8f946268990d8e15dd9069a6d" category="paragraph"><block ref="eca39b018af81e7b5c8e71b5b4aa3790" category="inline-link-rx"></block> 儲存管理員可藉由保證效能、並簡化及簡化儲存設備佔用空間、來整合工作負載。搭配API來實現儲存管理所有層面的自動化、Element可讓儲存管理員以更少的心力完成更多工作。</block>
@@ -1944,7 +1930,6 @@ Amazon FSX 需要此參數才能支援 ONTAP 後端、且不可為空白。</blo
   <block id="25f221cc63a7e1fa55b05c29420a72a2" category="paragraph"><block ref="2841e7defe3939e68d83d007d1ad666b" category="inline-link-rx"></block> 將例行工作自動化、讓基礎架構管理員能夠專注於更重要的功能、進而簡化資料中心的管理與規模。</block>
   <block id="be17f8b9c728a6cb61cad5a2609b3888" category="paragraph">Trident完全支援此功能。NetApp HCITrident可直接針對底層NetApp HCI 的資訊儲存平台、為容器化應用程式配置及管理儲存設備。</block>
   <block id="a3b5183ae6f5c3f1d6644448f795b5cb" category="inline-link">適用於Cloud Volumes Service Google Cloud的NetApp解決方案</block>
-  <block id="a1515efe69d0ac9d979af2bdfc068934" category="paragraph"><block ref="68704f3321dd8ca7029c03c29da7736a" category="inline-link-rx"></block> 是雲端原生檔案服務、可透過NFS和SMB提供NAS磁碟區的All Flash效能。此服務可讓任何工作負載（包括舊版應用程式）在GCP雲端上執行。它提供完整的託管服務、提供一致的高效能、即時複製、資料保護、以及安全存取Google Compute Engine（GCE）執行個體。</block>
   <block id="afe272beb780ad53d441c342bf1c8c77" category="summary">深入瞭解tridentctl、這是一個命令列公用程式、可讓您輕鬆存取Trident。</block>
   <block id="319c1a7b5479ffa2a028b658ad5b7033" category="doc">tridentctl命令和選項</block>
   <block id="7358b1fd077fa65f88fff87888fd2547" category="inline-link">Trident安裝程式套裝組合</block>
@@ -2612,7 +2597,6 @@ Volume：</block>
   <block id="f53514cf8829a41463c245b088ae732e" category="paragraph">若要啟用 Astra Trident 在 Windows 節點上執行：</block>
   <block id="a921baa9e8c81f13d59fed4fce57ec88" category="example-title">範例 2 ：啟用強制分離</block>
   <block id="2f6c694f9d016c7193ece4853c402d96" category="inline-link-macro">自訂Trident操作員安裝</block>
-  <block id="c5b5b00ff1b3a892c8694ab932cbf9ca" category="paragraph">如需強制分離的詳細資訊、請參閱 <block ref="63cac71755fb6ef1f1fea34cf4037121" category="inline-link-macro-rx"></block>。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="section-title">下一步</block>
   <block id="94498fae00c7d39d673cb4558db7bc6f" category="inline-link-macro">建立後端和儲存類別、配置磁碟區、並將磁碟區掛載到Pod中</block>
   <block id="a8726a62b6428d53252a80359035e514" category="paragraph">現在您可以了 <block ref="1c0bc5c2bfbcde176e7340e3acb3bb23" category="inline-link-macro-rx"></block>。</block>
@@ -2670,7 +2654,6 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="a60c2f57df655a9ac5fcaa0750886195" category="summary">如果您剛開始使用Kubernetes、請依照指示安裝Kubernetes來試用。這些說明提供了一個裸機、單節點叢集、Trident可與該叢集整合以供示範之用。</block>
   <block id="62bdbe048d174b559cb770f9ebaf0895" category="doc">歡迎試用</block>
   <block id="e8dadc588901af436e2c6036acf23973" category="inline-link-macro">NetApp試用</block>
-  <block id="71503111a9a38d6809e90320e9623ce0" category="paragraph">NetApp提供立即可用的實驗室映像、您可以透過申請 <block ref="eb9c34df0ed196dd801ef85207c8bf2c" category="inline-link-macro-rx"></block>。</block>
   <block id="8e38f783b1f4f54c97bae54c0e8a176f" category="section-title">深入瞭解測試磁碟機</block>
   <block id="99dc40aa93c5cb01a5d80f68e3287975" category="paragraph">測試磁碟機提供您一個沙箱環境、其中安裝並設定了三節點Kubernetes叢集和Astra Trident。這是熟悉Astra Trident並探索其特色的絕佳方式。</block>
   <block id="8685ac2061f9dca7ab48f41e0871f7af" category="inline-link-macro">Kubeadm安裝指南</block>
@@ -2692,7 +2675,6 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="f73c8e5f81fc3213cf0bc8c399979852" category="admonition">如果您尚未熟悉 <block ref="0342248ee22d08eaf42465a29ddd67ec" category="inline-link-macro-rx"></block>現在正是這麼做的好時機。</block>
   <block id="a24b4ef46f44c1b54b99e62f49bef9af" category="section-title">選擇您的安裝方法</block>
   <block id="dcb987a2d08ee1a9198d1183b1a63a96" category="inline-link-macro">在方法之間移動</block>
-  <block id="e11c9248bc5d43c6663f67955adbc53b" category="paragraph">選取最適合您的安裝方法。您也應該檢閱的考量事項 <block ref="e6ce874bf5f421a383109cc222a74763" category="inline-link-macro-rx"></block> 做出決定之前。</block>
   <block id="bd1cc9ebdb33ed22a54815219f97af08" category="section-title">使用Trident運算子</block>
   <block id="b2ad529645b5bea51c4bcd516a5c5c8f" category="inline-link-macro">自訂您的Trident營運者部署</block>
   <block id="938620f641cb8e0eead448105ff52780" category="paragraph">無論是手動部署或使用Helm、Trident營運者都是簡化安裝及動態管理Astra Trident資源的絕佳方式。您甚至可以 <block ref="5290e5312b651716bedf8a83ec5a6467" category="inline-link-macro-rx"></block> 使用中的屬性<block ref="ae61bf6af1a7406b62c72a4bef1ab62d" prefix=" " category="inline-code"></block> 自訂資源（CR）。</block>
@@ -2820,7 +2802,6 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="2f5480efe7a0a4b0cffbf110abec11c2" category="paragraph">使用Trident <block ref="cdacb2b0d49176a3c0d8cc9d693de833" category="inline-link-macro-rx"></block> 您可以部署Trident運算子、並在單一步驟中安裝Trident。</block>
   <block id="8f3958d59b8da100a4663b1cace112b7" category="inline-link-macro">部署先決條件</block>
   <block id="2e1b3f44683eee188be985693c4af5e1" category="inline-link-macro">Helm版本3</block>
-  <block id="64d2af40480a5cebf7e64939f6253bf3" category="paragraph">此外 <block ref="c7282b7e52e27c635b613335e59bf436" category="inline-link-macro-rx"></block> 您的需求 <block ref="fc0cdbd8defe0c7175199dd05a0f8e76" category="inline-link-macro-rx"></block>。</block>
   <block id="113fbd468c6aaecfbef57e5d1e9b500d" category="list-text">新增Astra Trident Helm儲存庫：</block>
   <block id="27855a2d0ff79cc3ecf0f08e67257b0a" category="list-text">使用<block ref="0562418e6d9a76d0dd22b2f186a2203d" prefix=" " category="inline-code"></block> 並指定部署和映像登錄位置的名稱。您的 <block ref="57de9a35aeedde82408b1e047030d221" category="inline-link-macro-rx"></block> 可以位於一個登錄或不同的登錄中、但所有的SCSI映像都必須位於同一個登錄中。在範例中、<block ref="fc54aba0c9f6c2fff98f4890349f656c" prefix=" " category="inline-code"></block> 是您要安裝的Astra Trident版本。</block>
   <block id="134bf17c90c90b5aeed99dde262bf14d" category="admonition">如果您已經為Trident建立命名空間<block ref="cc1f5c1d16e33b8463c9ee27295cd5df" prefix=" " category="inline-code"></block> 參數不會建立額外的命名空間。</block>
@@ -3116,7 +3097,6 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="c5e4214ace446476446bc7f985b69ec7" category="paragraph">您可以使用操作員手動或使用 Helm 輕鬆升級現有的 Astra Trident 安裝。</block>
   <block id="441b9a0ce7113f17c0021f9922b1c865" category="section-title">使用Trident營運者進行升級</block>
   <block id="d6b7a42c6c41b071d2c80b3e4c2a7edf" category="inline-link-macro">選擇升級方法</block>
-  <block id="8613847437ef211a620ecd02f2f6771a" category="paragraph">一般而言、您應該使用原本用於安裝 Astra Trident 的相同方法來升級 Astra Trident 。檢閱 <block ref="5cffa5fbe758cc3901f0e33c78b29d1b" category="inline-link-macro-rx"></block> 嘗試與 Trident 運算子一起升級之前。</block>
   <block id="87e47949812c103309ba30bd12b61cb6" category="paragraph">從使用命名空間範圍運算子（ 20.07 至 20.10 版）安裝的 Astra Trident 執行個體升級時、 Trident 運算子會自動：</block>
   <block id="28ff96c045b97f0d4bcc7338c5d97ed4" category="list-text">移轉<block ref="ecd4f8050193d4ec7e3added385b49a6" prefix=" " category="inline-code"></block> 至<block ref="04058ba3436aa631a94f8271262cde75" prefix=" " category="inline-code"></block> 具有相同名稱的物件、</block>
   <block id="0f49953545c3d0c47b339adb67df1921" category="list-text">刪除<block ref="4cb15aa30ce0ec4747b372d6d2a5e637" prefix=" " category="inline-code"></block> 物件和<block ref="297dc4adc64c26ae2fd6a1039d00ccb0" prefix=" " category="inline-code"></block> 客戶需求日</block>
@@ -3140,14 +3120,12 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="61b591b7a171a46211e97cfbb6f4f245" category="paragraph">您可以使用命名空間範圍運算子（ 20.07 至 20.10 版）、從安裝的 Astra Trident 執行個體升級到叢集範圍的運算子安裝。</block>
   <block id="049d9519b9143d1b03035ab556b6bfd6" category="paragraph">您需要用來部署命名空間範圍運算子的套件 YAML 檔案<block ref="79243f20ce3e723d13bf0774e8348ca2" prefix=" " category="inline-code"></block> 其中<block ref="7d2e512472107955c1b3fb2ce2e19bc4" prefix=" " category="inline-code"></block> 為版本編號和<block ref="32f68f45f3f6badcd1aa2343bbbce67c" prefix=" " category="inline-code"></block> 為套裝組合Yaml檔案名稱。</block>
   <block id="cc7d63c2df065f7ffd0737333a5fbdd7" category="list-text">驗證<block ref="4cb15aa30ce0ec4747b372d6d2a5e637" prefix=" " category="inline-code"></block> 現有 Trident 安裝的狀態為<block ref="98dd43dfae05b11befe1f140e0ec787a" prefix=" " category="inline-code"></block>。</block>
-  <block id="f14a1d8e56a0cbd2826edd38778371f7" category="admonition">如果狀態顯示<block ref="6909beea5b50605780e3411f879fe916" prefix=" " category="inline-code"></block>、請務必先解決此問題、再繼續進行。如需可能狀態值的清單、請參閱<block ref="6aefd1c9ce8e43313a8c7c92e2fac4f3" category="inline-link-rx"></block>。</block>
   <block id="683d018a2f7c70469fd74ba0eeae2a79" category="list-text">建立<block ref="ae61bf6af1a7406b62c72a4bef1ab62d" prefix=" " category="inline-code"></block> 請使用Trident安裝程式隨附的資訊清單來進行CRD。</block>
   <block id="3cb9e4719d19a9424eaf2357c9a17204" category="list-text">使用命名空間範圍的運算子資訊清單來刪除。</block>
   <block id="4828a9c126c7bb1e007a192a611456eb" category="list-text">確保您位於正確的目錄中。</block>
   <block id="5ce0463e67c0117541fc58f1b415e168" category="list-text">刪除命名空間範圍運算子。</block>
   <block id="7d619684494b00b59a0b46381f71e67a" category="list-text">確認 Trident 運算子已移除。</block>
   <block id="cae73b6a00921ef48cee176b0d4336fe" category="inline-link-macro">組態選項</block>
-  <block id="8539a9341bd4c0e0352c5ff52c361888" category="list-text">（選用）如果需要修改安裝參數、請更新<block ref="4cb15aa30ce0ec4747b372d6d2a5e637" prefix=" " category="inline-code"></block> 規格這可能包括變更：的值<block ref="d771848c80f96e5954a8658655cf79d7" prefix=" " category="inline-code"></block>、<block ref="7ecc687ea7566f05fd13fde7be607bfc" prefix=" " category="inline-code"></block>、私有映像儲存庫、以及提供<block ref="0d9b54b29da54379cca6b8782b9faae5" prefix=" " category="inline-code"></block>）刪除命名空間範圍的運算子之後、安裝叢集範圍的運算子之前。如需可更新的完整參數清單、請參閱 <block ref="d752d8869a42e1b0fd341b92b54677e0" category="inline-link-macro-rx"></block>。</block>
   <block id="98b62c9a5de0454a7540b5a6ae10f553" category="list-text">安裝 Trident 叢集範圍運算子。</block>
   <block id="81082668b211ff4036090769fede7bb0" category="list-text">確保您位於正確的目錄中。</block>
   <block id="1833409b195c94157eaab1b3af599079" category="list-text">在同一個命名空間中安裝叢集範圍的運算子。</block>
@@ -3171,10 +3149,8 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="589143858f045594979d5d3cf5289bf6" category="paragraph">您可以使用輕鬆升級現有的Astra Trident安裝<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>。</block>
   <block id="8863b876c027954f205dc88c5580fb51" category="section-title">使用升級 Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block></block>
   <block id="4ff0a9f6065b24ce3d325bad3223f4e2" category="paragraph">解除安裝和重新安裝Astra Trident可做為升級。當您解除安裝Trident時、不會刪除由Astra Trident部署所使用的持續磁碟區宣告（PVc）和持續磁碟區（PV）。當Astra Trident離線時、已配置的PV仍可繼續使用、而Astra Trident會在任何建立於過渡期間的永久虛電路恢復上線後、為其配置磁碟區。</block>
-  <block id="ab639a35db468f671d4a76735e801015" category="paragraph">檢閱 <block ref="5cffa5fbe758cc3901f0e33c78b29d1b" category="inline-link-macro-rx"></block> 使用升級之前<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>。</block>
   <block id="a38e5a20ac16df242bdde92e028a100e" category="list-text">在中執行解除安裝命令<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> 移除與 Astra Trident 相關的所有資源、但 CRD 和相關物件除外。</block>
   <block id="e7447899210826e544345ba93e133255" category="inline-link-macro">使用tridentctl安裝Astra Trident</block>
-  <block id="0c147de2192f3060367ba5761742d227" category="list-text">重新安裝 Astra Trident 。請參閱 <block ref="d55139d84e0ac19d8211d27772e17544" category="inline-link-macro-rx"></block>。</block>
   <block id="1d2d1200e759d67b259f843be2270f71" category="admonition">請勿中斷升級程序。確保安裝程式執行完成。</block>
   <block id="82da15c71df4abcf26887a7505c771b7" category="section-title">使用升級磁碟區<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block></block>
   <block id="14a3c3a4f195df957fb16f026bdddcf0" category="paragraph">升級後、您可以使用較新的 Trident 版本（例如隨選 Volume Snapshot ）所提供的豐富功能集、使用來升級磁碟區<block ref="07498068c7d2dad8746d2cd3315d231a" prefix=" " category="inline-code"></block> 命令。</block>
@@ -3257,7 +3233,6 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="621a18da07981d88f6c4e476af0884d3" category="section-title">何時使用升級<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block></block>
   <block id="d39be5a593ef4fc69e44c6efdca9f2b9" category="inline-link-macro">升級 &lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt;</block>
   <block id="72f944c5dc6b9f1f99a87504f7a0b101" category="paragraph">您可以 <block ref="9af1b055a24adf4a3ab17b699c20b76d" category="inline-link-macro-rx"></block> 如果您最初使用「 tridenctl 」安裝 Astra Trident 。</block>
-  <block id="587c30eba71de0157d01c12e17ff0ab9" category="paragraph"><block ref="c67fd1b99934afa248dfeb285a9a4191" prefix="" category="inline-code"></block> 是安裝 Astra Trident 的傳統方法、為需要複雜自訂的客戶提供最多選項。如需詳細資料、請參閱 <block ref="741b0022093ab2616396c33090f075f4" category="inline-link-macro-rx"></block>。</block>
   <block id="152a676ac450f5b96a35605dde352607" category="section-title">操作員變更</block>
   <block id="2027c35d34c22c0bd4bfe22c6c02832a" category="paragraph">21.01 版的 Astra Trident 為駕駛員帶來架構變更：</block>
   <block id="4d1b9ac70f0037098e345cb389ea45d9" category="list-text">運算子現在*叢集範圍*。Trident運算子先前的執行個體（20.04到20.10版）為*命名空間範圍*。叢集範圍內的運算子具有下列優點：</block>
@@ -3815,12 +3790,10 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="815f28e53ebfb423dfe835a845095bf6" category="inline-link-macro">ONTAP SnapMirror 複寫與還原</block>
   <block id="a5217e87e9aef874c28773b5774ecf37" category="paragraph">Astra Trident 無法設定 SnapMirror 複寫關係、不過儲存管理員可以使用 <block ref="c3487d6df2463efc752acd6f5cc45a1f" category="inline-link-macro-rx"></block> 複寫 Astra Trident 所建立的 Volume 。</block>
   <block id="c3c343b5a84229bd5095fd09f2afc5f5" category="inline-link-macro">tridentctl Volume 匯入</block>
-  <block id="5b570015a3a6711227cf6a2802ccd0d7" category="paragraph">然後、您可以使用將復原的磁碟區匯入 Astra Trident <block ref="d8ad77887a2224df2faf4f1df578e333" category="inline-link-macro-rx"></block>。</block>
   <block id="d8d9dfeae772da34290b750d0f848a26" category="admonition">匯入不受支援<block ref="caafdf62a2c609bfa5316118231a1007" prefix=" " category="inline-code"></block>、 <block ref="3016c12c1db45f14c80c9c1731b9c26a" prefix=" " category="inline-code"></block>或<block ref="70d5dbddc55e3700ddbc8d21f0de22a3" prefix=" " category="inline-code"></block> 驅動程式：</block>
   <block id="b489b293d6cbe8b86835d3cac8c315fb" category="section-title">Snapshot 資料保護</block>
   <block id="f332d72a4b78e34e31131f3a98c98053" category="paragraph">您可以使用下列項目來保護及還原資料：</block>
   <block id="97fb495fd3b6672c40bb0092ca102eca" category="list-text">外部快照控制器和 CRD 、用於建立持續磁碟區（ PV ）的 Kubernetes Volume 快照。</block>
-  <block id="cb55f92ada2ab9103f2202b5e32b90c2" category="paragraph"><block ref="cb55f92ada2ab9103f2202b5e32b90c2" category="inline-link-macro-rx"></block></block>
   <block id="83cd672b9742ba621e93a8b69c4ab2d4" category="list-text">ONTAP 快照可還原磁碟區的全部內容、或是還原個別檔案或 LUN 。</block>
   <block id="ad336d1fccea3e918d07055edac855a3" category="inline-link-macro">ONTAP 快照</block>
   <block id="0cb949d1baa06577db93328185a8f24d" category="paragraph"><block ref="0cb949d1baa06577db93328185a8f24d" category="inline-link-macro-rx"></block></block>
@@ -3951,5 +3924,28 @@ Astra Trident</block>
   <block id="5090b1528d6e6561587ada33bf0caab6" category="paragraph"><block ref="67ffc9d81af4d4784973c007c719056a" category="inline-link-rx"></block> 是由 NetApp 提供支援的企業級 Azure 檔案共用服務。您可以在 Azure 中原生運作要求最嚴苛的基於檔案的工作負載，並獲得您期望從 NetApp 獲得的卓越效能和豐富的資料管理功能。</block>
   <block id="4d7f894e8ec350a861c28ea984648f59" category="paragraph">要設定和使用 <block ref="22ab900b028c044945b4dba56093fe8f" category="inline-link-rx"></block> 後端、您需要以下元件：</block>
   <block id="9ea1dc44c501f59786a0dd2c5ebc2d21" category="list-text">Trident AutoSupport 不會收集或傳輸個人識別資訊（PII）或個人資訊。它附帶<block ref="ea14b34590cee15ec565ad8fd8feca2e" category="inline-link-rx"></block>不適用於 Trident 容器映像本身。您可以深入瞭解 NetApp 對資料安全性和信任的承諾<block ref="ea3b01bc03342a227ac7c6848f1e44fa" category="inline-link-rx"></block>。</block>
-  <block id="97c3cb7a63d57fde445ca4da624c5611" category="list-text">使用 Trident 搭配<block ref="5990d744db8a85d254742635736f0912" category="inline-link-rx"></block>時可能遇到的一個常見問題是，租用戶金鑰和用戶端金鑰來自權限不足的應用程式註冊。如需 Trident 需求的完整清單，請參閱<block ref="cd38c25b6345abc8733d2ef72739cd97" category="inline-link-macro-rx"></block>組態。</block>
+  <block id="ec22485a30f2805f23d8942a50297c76" category="paragraph">是的，Astra Trident 可以離線安裝。請參閱 <block ref="c6cdf92613a42f9f35a3430e9ce1986c" category="inline-link-macro-rx"></block>。</block>
+  <block id="349e263e70a8b86fa29aef1c8bf772d4" category="paragraph">Trident 安裝程式會建立一個 Kubernetes ClusterRole，該角色對 Kubernetes 叢集的 PersistentVolume、PersistentVolumeClaim、StorageClass 和 Secret 資源具有特定的存取權限。請參閱 <block ref="79f53feeeafd5ecd74bd219c51e2b475" category="inline-link-macro-rx"></block>。</block>
+  <block id="75c737e391d78c1bf28fb014ead077f2" category="paragraph">如有需要，您可以本地產生和修改 Astra Trident 安裝時使用的確切清單檔案。請參閱 <block ref="79f53feeeafd5ecd74bd219c51e2b475" category="inline-link-macro-rx"></block>。</block>
+  <block id="7e0627462e433d4752e70f2a2789d5a3" category="paragraph">如果要降級，需要考慮許多因素。請參閱<block ref="57aa39fdebcf8d86624ba8717fd7d6c6" category="inline-link-macro-rx"></block>。</block>
+  <block id="db7fc8df66e930e05282807a6ebd58f4" category="paragraph">除了 <block ref="1feb3274d112f2cef694d133af384cac" category="inline-link-macro-rx"></block> 之外，您還需要 <block ref="fc0cdbd8defe0c7175199dd05a0f8e76" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6d8b463f43b9bd6d3c74d5dce2cd55b" category="paragraph">如需強制分離的詳細資訊，請參閱<block ref="6c7800cce21a64dbbd3f0ddcad0c6998" category="inline-link-macro-rx"></block>。</block>
+  <block id="52c58f553a5ef6874859d0bf137653fc" category="paragraph">選擇適合您的安裝方式。在做出決定之前，您還應該考慮 <block ref="8566ad2be80f530306673ceb0a701406" category="inline-link-macro-rx"></block>。</block>
+  <block id="29298e23948516ec20025e275a543590" category="paragraph">NetApp 提供一個可直接使用的實驗室映像，您可以透過 <block ref="1b82f3af90a0f7c7537a178da2b2ffa1" category="inline-link-macro-rx"></block> 申請。</block>
+  <block id="5a64568a80492b0a503962e0c1906713" category="paragraph">通常情況下，您應該使用與最初安裝 Astra Trident 時相同的方法進行升級。在嘗試使用 Trident operator 進行升級之前，請先檢閱 <block ref="53b0475924b1ddff6e4f5b386fa62640" category="inline-link-macro-rx"></block>。</block>
+  <block id="7e6dc6edcd563c05ddf38fe3feefffe6" category="admonition">如果狀態顯示<block ref="6909beea5b50605780e3411f879fe916" prefix=" " category="inline-code"></block>，請確保在繼續操作之前解決該問題。有關可能的狀態值列表，請參閱<block ref="70f81040fd658222822fdc844c57b9dc" category="inline-link-macro-rx"></block>。</block>
+  <block id="f15d862548ef640b0cc7094d1ceec7b8" category="list-text">（可選）如果需要修改安裝參數，請更新<block ref="4cb15aa30ce0ec4747b372d6d2a5e637" prefix=" " category="inline-code"></block>規格。這可能包括變更下列設定：<block ref="d771848c80f96e5954a8658655cf79d7" prefix=" " category="inline-code"></block>、<block ref="7ecc687ea7566f05fd13fde7be607bfc" prefix=" " category="inline-code"></block>的值、私人映像儲存庫，以及在刪除命名空間作用域營運者之前、安裝叢集作用域營運者之後提供<block ref="0d9b54b29da54379cca6b8782b9faae5" prefix=" " category="inline-code"></block>）。如需可更新參數的完整清單，請參閱<block ref="ae954335852b68c565b336eae261424c" category="inline-link-macro-rx"></block>。</block>
+  <block id="734d933af3e0fece06519150533e3e55" category="paragraph"><block ref="c67fd1b99934afa248dfeb285a9a4191" prefix="" category="inline-code"></block> 是安裝 Astra Trident 的傳統方法，為需要複雜自訂的使用者提供最多選項。如需更多詳細資訊，請參閱 <block ref="dd52023b82f984c6a5bdb87bdff9d260" category="inline-link-macro-rx"></block>。</block>
+  <block id="7ba0dd834b932c7125765a293d38c4f6" category="paragraph">在使用<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>進行升級之前，請先檢查<block ref="ad3ae3ba576f54a9ed86202bbeedc293" category="inline-link-macro-rx"></block>。</block>
+  <block id="b245573f9e56ac5ee82ff63c840530ff" category="list-text">重新安裝 Astra Trident。請參閱 <block ref="5661f9ee825513eb43b538bcc41f76ac" category="inline-link-macro-rx"></block>。</block>
+  <block id="d055d4dfcb35cd1eea7b3d52e42a8924" category="paragraph">然後，您可以使用 <block ref="b0a81d9cb6f9ea994a428f959b11d3c6" category="inline-link-macro-rx"></block> 將復原的磁碟區匯入 Astra Trident。</block>
+  <block id="4227c1b28cc9c04bf3552b7aae57fc3c" category="paragraph"><block ref="4227c1b28cc9c04bf3552b7aae57fc3c" category="inline-link-macro-rx"></block></block>
+  <block id="714ad635b7b855ea6b214ed7b344a93a" category="paragraph">Cloud Volumes ONTAP 是一款純軟體儲存設備，可在雲端運作 ONTAP 資料管理軟體。您可以使用 Cloud Volumes ONTAP 處理生產工作負載、災難復原、DevOps、檔案共用和資料庫管理。它透過提供儲存效率、高可用性、資料複製、資料分層和應用程式一致性，將企業儲存擴展到雲端。</block>
+  <block id="09e5ae8723c2186bbb50d9e0a08eb64f" category="paragraph"><block ref="6cb366d36cc7d558f998a05025384719" category="inline-link-rx"></block> 是一項雲端原生檔案服務，可透過 NFS 和 SMB 提供 All Flash 效能的 NAS 磁碟區。該服務支援任何工作負載（包括傳統應用程式）在 GCP 雲端上運行。它提供完全代管服務，可實現一致的高效能、即時複製、資料保護，以及對 Google Compute Engine (GCE) 執行個體的安全存取。</block>
+  <block id="e3f173c8eede192f942c02dde616f9b4" category="paragraph">Astra Trident 可以透過以下兩種方式之一建立 Cloud Volumes Service 磁碟區<block ref="0e0bedd2b5fbccecb2a3b95925d60b6d" category="inline-link-macro-rx"></block>：</block>
+  <block id="cf8dac454aa871b40751cb77bc25fffd" category="list-text">*CVS-Performance*：Astra Trident 的預設服務類型。這種效能最佳化型服務類型最適合注重效能的生產工作負載。CVS-Performance 服務類型是一種硬體選項，支援最小 100 GiB 的磁碟區。您可以選擇以下選項之一<block ref="50eb937c50385f64de3990e26821a720" category="inline-link-macro-rx"></block>：</block>
+  <block id="7523a04d12ccedb3b0da95c71ce61748" category="list-text">*CVS*：CVS 服務類型提供高區域可用性，但效能水準有限或中等。CVS 服務類型是一種軟體選項，使用儲存池來支援小至 1 GiB 的磁碟區。儲存池最多可包含 50 個磁碟區，所有磁碟區共用集區的容量和效能。您可以選擇以下選項之一<block ref="317a7f4ddfc9168f53b85126e7b70d3e" category="inline-link-macro-rx"></block>：</block>
+  <block id="4210f9797b57dbdc6e053e48413768b6" category="paragraph">要設定和使用<block ref="cc4cbeecb6e71ce65d6e5af5fbde3163" category="inline-link-rx"></block>後端，您需要以下元件：</block>
+  <block id="9502f88fbe245a8b7aaf0d7523fd74d1" category="cell">啟用 LUKS 加密。請參閱 <block ref="569f9f91cdcc19909b8acbf6f423daf7" category="inline-link-macro-rx"></block>。僅限 SAN。</block>
+  <block id="665d78235cdd5a9e42e1121e66526930" category="list-text">使用 Trident 搭配<block ref="22ab900b028c044945b4dba56093fe8f" category="inline-link-rx"></block>時可能遇到的一個常見問題是，租用戶金鑰和用戶端金鑰來自權限不足的應用程式註冊。如需 Trident 需求的完整清單，請參閱<block ref="c13721720aec9950d0736987c5d82c04" category="inline-link-macro-rx"></block>組態。</block>
 </blocks>

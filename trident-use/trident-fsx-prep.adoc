@@ -16,6 +16,7 @@ summary: 您可以將Amazon FSX for NetApp ONTAP 的支援文件系統與Astra T
 
 
 
+[[requirements]]
 == 需求
 
 此外 link:../trident-get-started/requirements.html["Astra Trident的需求"]、若要將FSXfor ONTAP 支援與Astra Trident整合、您需要：
@@ -32,6 +33,7 @@ NOTE: 請務必遵循Amazon Linux和Ubuntu所需的節點準備步驟 https://do
 
 
 
+[[ontap-san-and-nas-driver-integration]]
 == 整合SAN和NAS驅動程式ONTAP
 
 
@@ -102,6 +104,7 @@ trustedCACertificate: zcyBbaG...b3Igb3duIGNsYXNz
 
 
 
+[[prepare-to-provision-smb-volumes]]
 == 準備配置SMB磁碟區
 
 您可以使用來配置SMB磁碟區 `ontap-nas` 驅動程式：完成之前 <<整合SAN和NAS驅動程式ONTAP>> 完成下列步驟。

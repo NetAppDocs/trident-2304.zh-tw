@@ -16,6 +16,7 @@ summary: 您可以部署Trident運算子、並使用Helm安裝Astra Trident。�
 
 
 
+[[critical-information-about-astra-trident-23-04]]
 == Astra Trident 23.04 的重要資訊
 
 *您必須閱讀下列有關Astra Trident的重要資訊。*
@@ -33,6 +34,7 @@ summary: 您可以部署Trident運算子、並使用Helm安裝Astra Trident。�
 ====
 
 
+[[deploy-the-trident-operator-and-install-astra-trident-using-helm]]
 == 部署Trident操作員、並使用Helm安裝Astra Trident
 
 使用Trident link:https://artifacthub.io/packages/helm/netapp-trident/trident-operator["掌舵表"^] 您可以部署Trident運算子、並在單一步驟中安裝Trident。
@@ -40,7 +42,7 @@ summary: 您可以部署Trident運算子、並使用Helm安裝Astra Trident。�
 檢閱 link:../trident-get-started/kubernetes-deploy.html["安裝總覽"] 為了確保您符合安裝先決條件、並為您的環境選擇正確的安裝選項。
 
 .開始之前
-此外 link:../trident-get-started/kubernetes-deploy.html#before-you-deploy["部署先決條件"] 您的需求 link:https://v3.helm.sh/["Helm版本3"^]。
+除了 link:kubernetes-deploy.html#before-you-begin["部署先決條件"] 之外，您還需要 link:https://v3.helm.sh/["Helm版本3"^]。
 
 .步驟
 . 新增Astra Trident Helm儲存庫：
@@ -80,6 +82,7 @@ NOTE: 如果您已經為Trident建立命名空間 `--create-namespace` 參數不
 
 
 
+[[pass-configuration-data-during-install]]
 == 在安裝期間傳遞組態資料
 
 安裝期間有兩種傳遞組態資料的方法：
@@ -106,6 +109,7 @@ helm install <name> netapp-trident/trident-operator --version 23.04.0  --create-
 ----
 
 
+[[configuration-options]]
 == 組態選項
 
 此表格和 `values.yaml` 檔案是 Helm 圖表的一部分、提供按鍵清單及其預設值。
@@ -221,6 +225,7 @@ helm install <name> netapp-trident/trident-operator --version 23.04.0  --create-
 |===
 
 
+[[understanding-controller-pods-and-node-pods]]
 === 瞭解控制器 Pod 和節點 Pod
 
 Astra Trident 會以單一控制器 Pod 的形式執行、並在叢集中的每個工作節點上提供節點 Pod 。節點 Pod 必須在任何想要裝載 Astra Trident Volume 的主機上執行。
@@ -233,6 +238,7 @@ Kubernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/assign-p
 
 
 
+[[whats-next]]
 == 下一步
 
 現在您可以了 link:kubernetes-postdeployment.html["建立後端和儲存類別、配置磁碟區、並將磁碟區掛載到Pod中"]。

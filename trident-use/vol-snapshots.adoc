@@ -24,6 +24,7 @@ NOTE: 如果在 GKE 環境中建立隨需磁碟區快照、請勿建立快照控
 
 
 
+[[step-1-create-a-volumesnapshotclass]]
 == 步驟 1 ：建立 `VolumeSnapshotClass`
 
 此範例會建立Volume Snapshot類別。
@@ -44,6 +45,7 @@ deletionPolicy: Delete
 
 
 
+[[step-2-create-a-snapshot-of-an-existing-pvc]]
 == 步驟2：建立現有PVc的快照
 
 此範例會建立現有PVc的快照。
@@ -101,6 +103,7 @@ Status:
 
 
 
+[[step-3-create-pvcs-from-volumesnapshots]]
 == 步驟3：從Volume Snapshot建立PVCS
 
 此範例使用快照建立 PVC 。
@@ -131,12 +134,14 @@ WARNING: 必須在與其相同的命名空間中建立 PVC `dataSource`。
 
 
 
+[[deleting-a-pv-with-snapshots]]
 == 刪除含快照的 PV
 
 刪除具有相關快照的持續Volume時、對應的Trident Volume會更新為「刪除狀態」。移除 Volume 快照以刪除 Astra Trident Volume 。
 
 
 
+[[deploying-a-volume-snapshot-controller]]
 == 部署Volume Snapshot控制器
 
 如果您的Kubernetes發佈版本未包含快照控制器和客戶需求日、您可以依照下列方式進行部署。
@@ -168,6 +173,7 @@ NOTE: 如有必要、請開啟 `deploy/kubernetes/snapshot-controller/rbac-snaps
 
 
 
+[[recover-volume-data-using-snapshots]]
 == 使用快照恢復 Volume 資料
 
 快照目錄預設為隱藏、以協助使用進行資源配置的磁碟區達到最大相容性 `ontap-nas` 和 `ontap-nas-economy` 驅動程式：啟用 `.snapshot` 直接從快照恢復資料的目錄。
@@ -183,6 +189,7 @@ NOTE: 當您還原快照複本時、會覆寫現有的 Volume 組態。建立快
 
 
 
+[[related-links]]
 == 相關連結
 
 * link:../trident-concepts/snapshots.html["Volume快照"]

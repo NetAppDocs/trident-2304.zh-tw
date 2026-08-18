@@ -16,6 +16,7 @@ summary: 部署Astra Trident之後、您可以繼續建立後端、建立儲存�
 
 
 
+[[step-1-create-a-backend]]
 == 步驟1：建立後端
 
 您現在可以繼續建立後端、由Astra Trident用來配置磁碟區。若要這麼做、請建立 `backend.json` 包含必要參數的檔案。不同後端類型的組態檔範例可在中找到 `sample-input` 目錄。
@@ -46,6 +47,7 @@ vi backend.json
 
 
 
+[[step-2-create-a-storage-class]]
 == 步驟2：建立儲存類別
 
 Kubernetes使用者使用指定的持續磁碟區宣告（PVCS）來配置磁碟區 https://kubernetes.io/docs/concepts/storage/storage-classes/["儲存類別"^] 依名稱。使用者會隱藏詳細資料、但儲存類別會識別該類別所使用的資源配置程式（本例中為Trident）、以及該類別對資源配置程式的意義。
@@ -109,6 +111,7 @@ basic-csi    csi.trident.netapp.io   15h
 ----
 
 
+[[step-3-provision-your-first-volume]]
 == 步驟3：配置第一個Volume
 
 現在您可以動態配置第一個Volume了。這是透過建立Kubernetes來完成 https://kubernetes.io/docs/concepts/storage/persistent-volumes["持續磁碟區宣告"^] （PVc）物件。
@@ -129,6 +132,7 @@ basic     Bound     pvc-3acb0d1c-b1ae-11e9-8d9f-5254004dfdb7   1Gi        RWO   
 ----
 
 
+[[step-4-mount-the-volumes-in-a-pod]]
 == 步驟4：在Pod中掛載磁碟區
 
 現在讓我們掛載磁碟區。我們將推出可安裝PV的Ngin像Pod `/usr/share/nginx/html`。

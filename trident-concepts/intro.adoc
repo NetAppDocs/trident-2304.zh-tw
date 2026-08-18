@@ -16,6 +16,7 @@ Astra Trident是由NetApp維護的完整支援開放原始碼專案、也是其�
 
 
 
+[[overview]]
 == 總覽
 
 Astra Trident將Kubernetes叢集部署為Pod、為Kubernetes工作負載提供動態儲存協調服務。它可讓您的容器化應用程式快速輕鬆地使用NetApp廣泛產品組合中的持續儲存設備、包括ONTAP ：VMware的各種產品組合（AFF/FAS/Select/Cloud / Amazon FSX for NetApp ONTAP ）、Element軟體（NetApp HCI / SolidFire）、Azure NetApp Files 以及Google Cloud Volumes Service Cloud上的整套服務和功能。
@@ -24,6 +25,7 @@ Astra Trident也是NetApp Astra的一項基礎技術、運用NetApp領先業界�
 
 
 
+[[supported-kubernetes-cluster-architectures]]
 == 支援的Kubernetes叢集架構
 
 下列Kubernetes架構支援Astra Trident：
@@ -54,6 +56,7 @@ Astra Trident也是NetApp Astra的一項基礎技術、運用NetApp領先業界�
 |===
 
 
+[[what-is-astra]]
 == 什麼是Astra？
 
 Astra可讓企業更輕鬆地管理、保護及搬移在公有雲內部及內部部署的Kubernetes上執行的資料豐富的容器化工作負載。Astra透過NetApp在公有雲和內部部署環境中備受肯定且廣泛的儲存產品組合、運用Astra Trident來提供持續的容器儲存設備。此外、它還提供一組豐富的進階應用程式感知資料管理功能、例如Snapshot、備份與還原、活動記錄、以及資料保護、災難/資料恢復、資料稽核、以及Kubernetes工作負載的移轉使用案例等主動複製功能。
@@ -62,6 +65,7 @@ Astra可讓企業更輕鬆地管理、保護及搬移在公有雲內部及內部
 
 
 
+[[for-more-information]]
 == 以取得更多資訊
 
 * https://docs.netapp.com/us-en/astra-family/intro-family.html["NetApp Astra產品系列"]

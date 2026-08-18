@@ -16,6 +16,7 @@ summary: 您可以將Azure NetApp Files 靜態（ANF）設定為Astra Trident的
 
 
 
+[[considerations]]
 == 考量
 
 * 此支援服務不支援小於100 GB的磁碟區。Azure NetApp Files如果要求較小的磁碟區、Astra Trident會自動建立100-GB磁碟區。

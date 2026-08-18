@@ -16,6 +16,7 @@ summary: 在您設定ANF後端之前、必須確保符合下列需求。
 
 
 
+[[prerequisites-for-nfs-and-smb-volumes]]
 == NFS 和 SMB 磁碟區的必要條件
 
 
@@ -84,6 +85,7 @@ NOTE: 如果您是第一次使用 Azure NetApp Files 、或是在新位置使用
 
 
 
+[[additional-requirements-for-smb-volumes]]
 == SMB磁碟區的其他需求
 
 若要建立 SMB Volume 、您必須具備：

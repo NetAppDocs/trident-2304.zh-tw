@@ -16,6 +16,7 @@ summary: 視Astra Trident的安裝方式而定、有多種選項可供您解除�
 
 
 
+[[uninstall-by-using-helm]]
 == 使用Helm解除安裝
 
 如果您使用Helm安裝了Astra Trident、您可以使用解除安裝 `helm uninstall`。
@@ -33,6 +34,7 @@ release "trident" uninstalled
 ----
 
 
+[[uninstall-by-using-the-trident-operator]]
 == 使用Trident運算子解除安裝
 
 如果您使用運算子安裝了Astra Trident、您可以執行下列其中一項來解除安裝：
@@ -62,6 +64,7 @@ WARNING: 執行完整解除安裝時、您只能考慮抹除客戶需求日。�
 
 
 
+[[uninstall-by-using-tridentctl]]
 == 使用解除安裝 `tridentctl`
 
 執行 `uninstall` 命令輸入 `tridentctl` 如下所示、移除所有與Astra Trident相關的資源（CRD和相關物件除外）、如此一來、就能輕鬆再次執行安裝程式以更新至較新的版本。
